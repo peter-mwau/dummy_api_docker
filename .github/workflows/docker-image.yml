@@ -15,7 +15,6 @@ jobs:
       - name: Build the Docker image
         run: docker build . --file api/Dockerfile --tag dummy_api:latest
 
-      - name: Build docker image & push to dockerhub
         uses: mr-smithers-excellent/docker-build-push@v4
         with:
           image: kyalepeter/dummy_api
