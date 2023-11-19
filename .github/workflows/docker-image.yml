@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Build the Docker image
-        run: docker build . --file api/Dockerfile --tag dummy_api:latest
+        run: docker build . --file Dockerfile --tag dummy_api:latest
 
         uses: mr-smithers-excellent/docker-build-push@v4
         with:
