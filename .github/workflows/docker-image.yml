@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag dummy_api:$(date +%s)
+        run: docker build . --file ../api/Dockerfile --tag dummy_api:$(date +%s)
 
       # Log in to Docker Hub
       - name: Log in to Docker Hub
