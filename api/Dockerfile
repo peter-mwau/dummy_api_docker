@@ -5,7 +5,7 @@ RUN npm install -g nodemon
 WORKDIR /app
 
 # Copy only the package.json and package-lock.json files
-COPY /package*.json .
+COPY api/package*.json .
 
 RUN npm install
 
